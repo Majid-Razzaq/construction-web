@@ -3,7 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 const Home = () => {
+   
   return (
+    <>
     <header>
         <div className='container py-3'>
             <Navbar expand="lg">
@@ -23,6 +25,29 @@ const Home = () => {
         </div>
 
     </header>
+    <main>
+        <section className='section-1'>
+            <div className='hero d-flex align-items-center'>
+                <div className="container-fluid">
+                    <div className="text-center">
+                        <span>Welcome Amazing Constructions</span>
+                        <h1>Crafting dreams with <br /> precision and excellence. </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum distinctio,<br />adipisci exercitationem accusamus perspiciatis corrupti nulla expedita !</p>
+                       <div className='mt-4'>
+                            <a href='#' className='btn btn-primary'>Contact Now</a>
+                            <a href='#' className='btn btn-secondary ms-2'>View Projects</a>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    </>
   )
 }
 
