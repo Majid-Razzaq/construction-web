@@ -21,6 +21,32 @@ h3{
 p{
     font-size: 1.2em;
 }
+.btn-primary{
+    background-color: $pirmary-color;
+    border: 1px solid $pirmary-color;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $secondary-color;
+        border: 1px solid $secondary-color; 
+    }
+}
+.btn-secondary{
+    background-color: $secondary-color
+    ;
+    border: 1px solid $secondary-color;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $pirmary-color;
+        border: 1px solid $pirmary-color; 
+    }
+}
+
 header{
     nav{
         .nav-link{
@@ -53,28 +79,16 @@ header{
         }
     }
 }
-.btn-primary{
-    background-color: $pirmary-color;
-    border: 1px solid $pirmary-color;
-    padding: 15px 20px;
-    font-size: 1em;
-    font-weight: 500;
-    text-transform: uppercase;
-    &:hover{
-        background-color: $secondary-color;
-        border: 1px solid $secondary-color; 
+
+.section-2{
+    img{
+        border-radius: 40px;
     }
-}
-.btn-secondary{
-    background-color: $secondary-color
-    ;
-    border: 1px solid $secondary-color;
-    padding: 15px 20px;
-    font-size: 1em;
-    font-weight: 500;
-    text-transform: uppercase;
-    &:hover{
-        background-color: $pirmary-color;
-        border: 1px solid $pirmary-color; 
+    span{
+        color: $pirmary-color;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        font-weight: 500;
     }
 }
