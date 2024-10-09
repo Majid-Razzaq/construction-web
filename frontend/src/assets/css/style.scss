@@ -3,6 +3,8 @@ $pirmary-color: #fe528d;
 $secondary-color: #FFB703;
 $text-color: #000;
 $text-white: #FFFFFF;
+$dark-background: #222725;
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body{
@@ -20,6 +22,13 @@ h3{
 }
 p{
     font-size: 1.2em;
+}
+ul{
+    padding-left: 0;
+    li{
+        list-style-type: none;
+        margin-left: 0;
+    }
 }
 .btn-primary{
     background-color: $pirmary-color;
@@ -64,6 +73,27 @@ header{
                 color: $pirmary-color;
             }
         }
+    }
+}
+
+
+footer{
+    background-color: $dark-background;
+    color: white;
+    h3{
+        font-size: 1.5em;
+        color: $secondary-color;
+    }
+    ul{
+        li{
+            padding: 5px 0;
+        }
+    }
+    a{
+        color: $text-white;
+        font-size: 1.2em;
+        text-decoration: none;
+
     }
 }
 
