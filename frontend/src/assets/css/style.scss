@@ -4,6 +4,7 @@ $secondary-color: #FFB703;
 $text-color: #000;
 $text-white: #FFFFFF;
 $dark-background: #222725;
+$light-background: #9e9b9b;
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -30,6 +31,11 @@ ul{
         margin-left: 0;
     }
 }
+
+.bg-light{
+    background-color: $light-background;
+}
+
 .btn-primary{
     background-color: $pirmary-color;
     border: 1px solid $pirmary-color;
@@ -55,7 +61,16 @@ ul{
         border: 1px solid $pirmary-color; 
     }
 }
-
+.section-header{
+    span{
+        color: $pirmary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
 header{
     nav{
         .nav-link{
@@ -120,5 +135,48 @@ footer{
         text-transform: uppercase;
         padding-bottom: 10px;
         font-weight: 500;
+    }
+}
+
+.section-3{
+    .item{
+        position: relative;
+        overflow: hidden;
+        color: $text-white;
+        &:hover{
+            .service-body{
+                transform: translateY(0%);
+                .service-content{
+                    opacity: 1;
+                }
+            }
+        }
+        .service-image{
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                border-radius: 40px;
+                aspect-ratio: 1 / 1.2;
+                object-fit: cover;
+            }
+            &:after{
+                
+            }
+        }
+
+        .service-body{
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            transform: translateY(80%);
+            transition: all 0.4s ease-in-out;
+
+            .service-content{
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+            }
+        }
     }
 }

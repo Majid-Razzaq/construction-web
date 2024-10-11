@@ -2,6 +2,7 @@ import React from 'react'
 import AboutImg from '../../assets/images/about-us.jpg';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import Serviceimg from '../../assets/images/construction1.jpg'
 
 const Home = () => {
    
@@ -25,7 +26,7 @@ const Home = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> 
         </section>
 
         {/* About us */}
@@ -45,6 +46,36 @@ const Home = () => {
             </div>
         </section>
     </main>
+
+    {/* Our services */}
+    <section className='section-3 bg-light py-5'>
+        <div className="container-fluid py-5">
+            <div className="section-header text-center">
+                <span>Our Services</span>
+                <h2>our construction services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+            <div className='row'>
+                <div className="col-md-3 col-lg-3">
+                    <div className="item">
+                        <div className="service-image">
+                            <img src={Serviceimg} className='w-100' alt="" />
+                        </div>
+                        <div className="service-body">
+                            <div className="service-title">
+                                <h3>Specialty Construction</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nulla sint</p>
+                            </div>
+                            <div className="service-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium maxime, nulla expedita perspiciatis sit non, reprehenderit hic,</p>
+                            </div>
+                            <a href="" className='btn btn-primary'>Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <Footer/>
     </>
