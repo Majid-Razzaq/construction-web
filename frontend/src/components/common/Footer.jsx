@@ -7,7 +7,7 @@ function Footer() {
         <div className="container py-5">
             <div className="row">
                 <div className="col-md-3">
-                    <h3>UrbanEdge Construction</h3>
+                    <h3 className='mb-3'>UrbanEdge Construction</h3>
                     <div className="pe-5">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptate neque iste</p>
                     </div>

@@ -31,15 +31,27 @@ ul{
         margin-left: 0;
     }
 }
+a{
+    text-decoration: none;
+    color: $text-color;
+    &:hover{
+        color: $pirmary-color;
+    }
+}
 
 .bg-light{
     background-color: $light-background;
+}
+.small{
+    padding: 10px 15px;
+}
+.large{
+    padding: 15px 20px;
 }
 
 .btn-primary{
     background-color: $pirmary-color;
     border: 1px solid $pirmary-color;
-    padding: 15px 20px;
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -49,10 +61,8 @@ ul{
     }
 }
 .btn-secondary{
-    background-color: $secondary-color
-    ;
+    background-color: $secondary-color;
     border: 1px solid $secondary-color;
-    padding: 15px 20px;
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -79,6 +89,9 @@ header{
             font-size: 1em;
             font-weight: 500;
             margin-left: 20px;
+            &:hover{
+                color: $pirmary-color;
+            }
         }
         .logo{
             text-transform: uppercase;
@@ -202,7 +215,10 @@ footer{
 
 .section-5{
     .swiper{
-        padding: 25px;
+        padding: 25px 25px 50px 25px;
+        .swiper-pagination-bullet-active{
+            background-color: $secondary-color;
+        }
     }
     .card{
         border-radius: 40px;
@@ -224,6 +240,21 @@ footer{
                 font-size: 1.3em;
                 font-weight: 500;
             }
+        }
+    }
+}
+.section-6{
+    .card{
+        border-radius: 40px;
+        img{
+            border-top-left-radius: 40%;
+            border-top-right-radius: 40%;
+        }
+        .card-body{
+            a.title{
+                    font-size: 1.4em;
+            }
+            
         }
     }
 }
