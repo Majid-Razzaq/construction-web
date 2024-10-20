@@ -1,5 +1,4 @@
 import React from 'react'
-import AboutImg from '../../assets/images/about-us.jpg';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import ServiceImg from '../../assets/images/construction1.jpg'
@@ -13,6 +12,7 @@ import 'swiper/css';
 import AvatarImage from '../../assets/images/author-2.jpg'
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
+import About from '../common/About';
 
 
 const Home = () => {
@@ -41,22 +41,7 @@ const Home = () => {
         </section>
 
         {/* About us */}
-        <section className='section-2 py-5'>
-            <div className="container py-5">
-                <div className='row'>
-                    <div className="col-md-6">
-                        <img src={AboutImg} className='w-100'/>
-                    </div>
-                    <div className="col-md-6">
-                        <span>About Us</span>
-                        <h2>Crafting structure that last a lifetime</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestiae consequuntur perferendis, dicta quidem ab nemo repudiandae pariatur officiis illum ullam. Dignissimos tempora nihil odio non dolorem earum dolor laudantium?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sed et dignissimos necessitatibus iusto voluptatem ab vitae a, officia iste minima quis fugit exercitationem minus culpa consequatur facere amet cumque.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        <About/>
 
     {/* Our services */}
     <section className='section-3 bg-light py-5'>
@@ -536,6 +521,8 @@ const Home = () => {
         </div>
     </section>
     {/* Blog & news section start */}
+
+    </main>
 
     <Footer/>
     </>
