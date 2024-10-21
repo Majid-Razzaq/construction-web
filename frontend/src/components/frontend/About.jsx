@@ -3,6 +3,7 @@ import Header from '../common/Header'
 import Footer from '../common/Footer'
 import {default as AboutNew} from '../common/About'
 import MemberImg from '../../assets/images/pexels-sindre-fs-1040880.jpg'
+import Hero from '../common/Hero'
 
 function About() {
   return (
@@ -10,17 +11,7 @@ function About() {
       <Header />
       <main>
             {/* Hero section */}
-            <section className='section-7'>
-              <div className='hero d-flex align-items-center'>
-                 <div className="container">
-                    <div className="text-left">
-                        <span>Quality. Integrity. Value.</span>
-                        <h1>About Us </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum distinctio,</p>
-                    </div>
-            </div>
-            </div> 
-        </section>
+            <Hero preHeading={'Quality. Integrity. Value.'} heading={'About Us'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum distinctio,'}/>
         <AboutNew/>
 
         {/* Our team */}
@@ -33,7 +24,7 @@ function About() {
               </div>
 
               <div className="row pt-3">
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 mb-3">
                     <div className="card shadow border-0">
                         <div className="card-img-top">
                             <img src={MemberImg} className='w-100' alt="" />
@@ -54,7 +45,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 mb-3">
                     <div className="card shadow border-0">
                         <div className="card-img-top">
                             <img src={MemberImg} className='w-100' alt="" />
@@ -75,7 +66,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 mb-3">
                     <div className="card shadow border-0">
                         <div className="card-img-top">
                             <img src={MemberImg} className='w-100' alt="" />
@@ -96,7 +87,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-6 col-lg-3 mb-3">
                     <div className="card shadow border-0">
                         <div className="card-img-top">
                             <img src={MemberImg} className='w-100' alt="" />
