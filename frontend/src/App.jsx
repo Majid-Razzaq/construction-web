@@ -6,6 +6,7 @@ import './assets/css/style.scss';
 import Services from './components/frontend/Services';
 import Projects from './components/frontend/Projects';
 import Blogs from './components/frontend/Blogs';
+import ContactUs from './components/frontend/ContactUs';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/services' element={<Services/>}/>
           <Route path='/projects' element={<Projects/>}/>
           <Route path='/blogs' element={<Blogs/>}/>
+          <Route path='/contact-us' element={<ContactUs/>}/>
         </Routes>
       </BrowserRouter>
     </>
